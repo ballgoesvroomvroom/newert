@@ -1,3 +1,12 @@
+root::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+}
+
+root::-webkit-scrollbar-track {
+	background-color: darkgrey;
+}
+
 html, body {
 	display: flex;
 	flex-direction: row;
@@ -48,30 +57,65 @@ p, a {
 	font-size: 1.2rem;
 }
 
+p > a {
+	text-decoration: underline;
+	color: #ff00c8;
+}
+
 img {
 	max-width: 100%;
 }
 
+pre {
+	background-color: #ffeff0;
+	margin: 5px 0;
+	padding: 5px;
+	border-radius: .2rem;
+	overflow-x: scroll;
+
+	scrollbar-color: rebeccapurple green;
+	scrollbar-width: thin;
+}
+
+code {
+	font-family: "Space Mono", monospace;
+}
+
+p > code {
+	font-size: 0.8em;
+	background-color: #ffeff0;
+	border-radius: .2rem;
+}
+
+pre > code {
+	white-space: pre;
+	-webkit-overflow-scrolling: touch;
+	overflow-x: scroll;
+	text-indent: 4;
+}
+
 #left {
-	flex-shrink: 0;
+	position: fixed;
 	width: 270px;
+	height: 100%;
 	padding: 40px;
 
+	overflow-x: hidden;
 	overflow-y: auto;
 
 	background-color: #0a0a0a;
 	color: #fff;
 
-	transition-property: visibility, transform;
+	transition-property: width;
 	transition-duration: 100ms;
 	transition-timing-function: ease-in-out;
 }
 
-#left > h1 {
-	padding-bottom: 80px;
+#homebutton {
+	margin-bottom: 80px;
 }
 
-#left > h1 > span {
+#homebutton > span {
 	font-size: 0.5em;
 	color: #a3a3a3;
 }
@@ -113,7 +157,7 @@ img {
 	width: 45px;
 	height: 40px;
 
-	box-shadow: 2px 2px 3px 1px;
+	box-shadow: 2px 2px 3px 1px #e1e1e1;
 	border-radius: 0 5px 5px 0;
 }
 
@@ -130,10 +174,18 @@ article {
 	align-content: space-between;
 
 	width: 100%;
+	margin-left: 350px;
 	flex: 1 1 auto;
 	padding-top: 130px;
 
 	overflow-y: auto;
+}
+
+#icon {
+	float: right;
+
+	height: auto;
+	max-width: 64px;
 }
 
 #articletopbar {
@@ -159,8 +211,12 @@ article {
 	}
 
 	#left {
-		visibility: hidden;
-		transform: translateX(-100%);
+		width: 0;
+		padding: 0;
+	}
+
+	#right {
+		margin-left: 0px;
 	}
 
 	article {

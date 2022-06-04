@@ -61,3 +61,12 @@ button, input[type="submit"], input[type="reset"] {
 body {
 	font-family: "Tinos", serif;
 }
+
+img {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	pointer-events: none;
+}

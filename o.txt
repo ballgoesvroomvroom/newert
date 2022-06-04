@@ -1,72 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale = 1.0" />
-
-		<link rel="stylesheet" href="def.css">
-		<link rel="stylesheet" href="index.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Space+Mono&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="app.js"></script>
-
-		<title>Catter</title>
-	</head>
-	<body style="max-width: 100%; min-height: 100vh">
-		<div id="topbar">
-			<button id="sidebarbutton">
-			</button>
-			<button id="status">
-				[ Prelude ]
-			</button>
-		</div>
-		<section id="left">
-			<div id="homebutton"><a href="/"><h1>Chong Jayden</h1><span><br>2022</span></a></div>
-			<h2>Contents</h2>
-			<nav id="navbar">
-				<a href="#prelude">Prelude</a>
-				<a href="#full-stack-web-app">Full stack web app.</a>
-				<a href="#myanimelist's-porter">MyAnimeList's porter</a>
-			</nav>
-		</section>
-		<div id="right">
-			<div id="articletopbar">
-				<button id="status">
-					[ Prelude ]
-				</button>
-			</div>
-			<article id="prelude">
-				<h1>Weter.</h1>
-				<p><img src="icon.png" id="icon"></p>
-				<p>A stylish portfolio.<br>With the elegance and purity of water. 🌊</p>
-				<section>
-					<h2>Introduction</h2>
-					<p>How is it!?</p>
-				</section>
-			</article>
-			<article id="full-stack-web-app">
-				<h1>Title</h1>
-				<p>A good technology is never bad</p>
-				<section>
-					<h2>Introduction</h2>
-					<p>How is it!?</p>
-					<figure>
-						<img src="https://animecorner.me/wp-content/uploads/2021/04/anime-corner-home-page-featured-image.jpg" alt="img">
-						<figcaption>caption here</figcaption>
-					</figure>
-				</section>
-			</article>
-			<article id="myanimelist's-porter">
-				<h1>Title</h1>
-				<p>A good technology is never bad</p>
-				<section>
-					<h2>Introduction</h2>
-					<p>How is it!?</p>
-				</section>
-			</article>
 		<article id=full-stack-web-app>
 			<section>
 				<h1>Full stack web application</h1>
@@ -198,7 +129,4 @@ keywords: ~fast, fast</code></pre>
 					<p>DISPLAY USERNAME on frontend (that's the minimal you can do; add a user popup panel to logout even)</p>
 					<p>&nbsp;</p>
 				</section>
-			</article>d
-		</div>
-	</body>
-</html>
+			</article>
