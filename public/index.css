@@ -155,7 +155,7 @@ pre > code {
 article {
 	padding: 50px 100px;
 	flex-basis: 100vh;
-	flex-shrink: 100vh;
+	flex-shrink: 0;
 }
 
 #right {

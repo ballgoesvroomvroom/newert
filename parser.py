@@ -31,7 +31,6 @@ class Regex:
 	## code block; multi-line code block
 	codeblock = re.compile("^```$")
 
-
 	### REPLACEMENTS FOR _safeParse
 	amp = re.compile("&(?!nbsp;)")
 
