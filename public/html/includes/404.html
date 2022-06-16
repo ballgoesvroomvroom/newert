@@ -17,7 +17,11 @@
 		<div style="padding: 10px; display: flex; flex-direction: column; justify-content: center; align-items: center; width: calc(100% - 20px); height: 100%">
 			<h1>404 Not Found (＃°Д°)</h1>
 			<p style="color: #ff00c8">[ Do double check the route ]</p>
-			<code>https://catonwater.com/abc</code>
+			<code id="path">https://catonwater.com/:path</code>
 		</div>
 	</body>
+	<script>
+		var d = document.getElementById("path");
+		d.innerText = window.location.href;
+	</script>
 </html>
